@@ -1,0 +1,57 @@
+button
+{
+  background-color: #361974;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+}
+
+button:hover
+{
+  background-color: #30156f;
+  transition: 2s;
+  cursor : pointer;
+
+}
+:root {
+  --animation-speed: 2s;
+  --primary-color: #000;
+  --secondary-color: #000;
+  --background-color: blue;
+  --text-color: blue;
+  --font: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.rain-container {
+  position: relative;
+  background: #fff;
+  /*   background: url("https://rb.gy/ufafte") no-repeat center center fixed; */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  object-fit: cover;
+  background-size: cover;
+}
+
+i {
+  position: absolute;
+  height: 120px;
+  border-radius: 0 0 999px 999px;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-120px);
+  }
+  100% {
+    transform: translateY(calc(100vh + 120px));
+  }
+}
