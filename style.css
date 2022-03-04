@@ -16,7 +16,7 @@ button:hover
 
 }
 :root {
-  --animation-speed: 2s;
+  --animation-speed: .5s;
   --primary-color: #000;
   --secondary-color: #000;
   --background-color: blue;
@@ -31,7 +31,7 @@ button:hover
 
 .rain-container {
   position: relative;
-  background: #fff;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d63c6f01-913a-4b24-82c2-884269978d01/d4wmz75-5ec4180f-92d2-465b-b97a-8c84e440342b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q2M2M2ZjAxLTkxM2EtNGIyNC04MmMyLTg4NDI2OTk3OGQwMVwvZDR3bXo3NS01ZWM0MTgwZi05MmQyLTQ2NWItYjk3YS04Yzg0ZTQ0MDM0MmIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Zob5KzkBYkQrY51tmvjHXFurp0kHqoGYxyDKtq0LvBI);
   /*   background: url("https://rb.gy/ufafte") no-repeat center center fixed; */
   width: 100vw;
   height: 100vh;
@@ -54,4 +54,21 @@ i {
   100% {
     transform: translateY(calc(100vh + 120px));
   }
+}
+body {
+  color: red;
+}
+#text {
+  color: white;
+}
+#name {
+  color: white;
+}
+.lmao {
+  padding-top: 15%;
+}
+.bord {
+  border: solid 2px;
+  border-radius: 5px;
+  margin-top: 100px;
 }

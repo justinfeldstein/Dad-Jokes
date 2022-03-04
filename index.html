@@ -10,19 +10,39 @@
 
 <body>
   <div class="rain-container">
-    <div>
-      <h1 class="text-center">
+    <div class="text-center">
+      <h1 id="text">
         Whats worse than rainy days?
       </h1>
-      <h3 id="edit">What's worse than a rainy day?</h3>
-      <button type="button" onclick=select();>What?</button>
+    <div class="bord">
+      <h3 id="edit" class="lmao" ><span id="name"></span></p></b></h3>
+      <button type="button" id="punchLine">What?</button>
+    </div>
     </div>
   </div>
   <script src="rain.js"></script>
   <script>
-    function select() {
-      document.getElementById("edit").innerHTML = "Getting mauled by a honey badger"
-    }
+  var answerList = [
+  'Getting mauled by a honey badger!',
+  'Getting eaten by a bear!',
+  'Getting hit by a car!',
+  'The black plague!',
+  'Getting into a plane crash!',
+  'Getting a boulder dropped on your face!',
+  'Being in Nagasaki on August 6, 1945!',
+  'Being guillotined!',
+  'When a red dot suddenly appears on your forehead!',
+  'Skypeia!',
+  'Being in Hiroshima on August 6, 1945!',
+  'Getting captured by the USSR!',
+];
+
+
+  punchLine.onclick = function() {
+    var randomNumber = Math.floor(Math.random() * answerList.length);
+    var name = answerList[randomNumber];
+  document.getElementById('name').textContent = name;
+  }
   </script>
 </body>
 
