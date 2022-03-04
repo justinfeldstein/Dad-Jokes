@@ -36,11 +36,25 @@
   'Being in Hiroshima on August 6, 1945! <img src="">',
   'Getting captured by the USSR! <img src="">',
 ];
-
+var imageList = [
+  '<img src="">',
+  '<img src="">',
+  '<img src="">',
+  '<img src="">',
+  '<img src="">',
+  '<img src="https://tse3.mm.bing.net/th?id=OIP.3xXCQXOtdXWwojCcBa_M9AHaEJ&pid=Api&P=0&w=298&h=167">',
+  '<img src="">',
+  '<img src="">',
+  '<img src="">',
+  '<img src="">',
+  '<img src="">',
+  '<img src="">',
+];
 
   punchLine.onclick = function() {
     var randomNumber = Math.floor(Math.random() * answerList.length);
     var name = answerList[randomNumber];
+    var name = imageList[randomNumber];
   document.getElementById('name').textContent = name;
   }
   </script>
